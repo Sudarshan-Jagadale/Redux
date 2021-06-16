@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  font-size: 40px;
+  padding: 10px;
+  color: violet;
+  background-color: aqua;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 0.15s;
+}
+
+.counterText {
+  padding: 0 15px;
+  font-size: 7em;
+}
+
+.amountText {
+  font-size: 28px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+  margin-right: 10px;
+}

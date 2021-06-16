@@ -1,10 +1,15 @@
+import CounterClass from "./counter/ClassBase/CounterClass";
+import Counter from "./counter/Counter";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Edit to see some magic happen!</h2>
+      <h1>Redux toolkit</h1>
+      <h2> function base component </h2>
+      <Counter />
+      <h2> class base component </h2>
+      <CounterClass />
     </div>
   );
 }
