@@ -1,5 +1,5 @@
 import CounterClass from "./counter/ClassBase/CounterClass";
-import Counter from "./counter/Counter";
+import Counter from "./counter/FunctionBase/Counter";
 import "./styles.css";
 
 export default function App() {
