@@ -11,7 +11,7 @@ export default function Index(props) {
   const [desc, setDesc] = useState();
   const save = () => {
     console.log("save");
-    dispatch(saveTodo(name, desc));
+    dispatch(saveTodo({ name: name, desc: desc, id: new Date().getTime() }));
   };
   return (
     <div className="main">
@@ -32,8 +32,8 @@ export default function Index(props) {
       <button className="button" onClick={save}>
         Save
       </button>
-      <List />
       {JSON.stringify(todo)}
+      <List />
     </div>
   );
 }

@@ -1,8 +1,8 @@
-export default function TODO(props) {
+export default function TODO({ todo, ...other }) {
   return (
     <div>
-      <div>name: {props.name}</div>
-      <div>desc : {props.desc}</div>
+      <div>name: {todo.name}</div>
+      <div>desc : {todo.desc}</div>
     </div>
   );
 }
