@@ -1,4 +1,26 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
+  /*text-align: center;*/
+}
+
+.nav {
+  padding: 0 5px 0;
+  font-size: 20px;
+  color: #fff;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.nav > a {
+  text-decoration: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.nav > a:hover {
+  background-color: #639;
+  color: #fff;
+}
+.nav:not(first-child) {
+  padding-left: 0;
+  margin-left: 0;
 }

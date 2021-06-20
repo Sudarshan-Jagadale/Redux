@@ -1,3 +1,33 @@
+@keyframes example {
+  0% {
+    border-color: #001100;
+  }
+  25% {
+    /* background-color: yellow;
+    width: 50%;*/
+    border-color: red;
+  }
+  50% {
+    /* width: 75%;*/
+    border-color: blue;
+  }
+  100% {
+    border-color: #000000;
+  }
+}
+
+.counter {
+  background-color: #f8f8f8;
+  padding: 5px;
+  border: 1px solid #010101;
+  animation-name: example;
+  animation-duration: 4s;
+  border-radius: 4px;
+  box-sizing: "padding";
+  animation-iteration-count: infinite;
+  flex-direction: column;
+}
+
 .row {
   display: flex;
   align-items: center;
@@ -7,12 +37,25 @@
 .button {
   appearance: none;
   border: none;
-  font-size: 40px;
+  font-size: 28px;
   padding: 10px;
-  color: violet;
-  background-color: aqua;
+  color: #f0f0f0;
+  background-color: #639;
   outline: none;
   border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 0.15s;
+}
+
+.reset {
+  appearance: none;
+  border: none;
+  font-size: 32px;
+  padding: 10px;
+  color: #f0f2fc;
+  background-color: #cc3e44;
+  outline: none;
+  border: 2px solid #0000;
   border-radius: 4px;
   transition: all 0.15s;
 }
@@ -20,6 +63,14 @@
 .counterText {
   padding: 0 15px;
   font-size: 7em;
+}
+
+.counterText[count^="-"] {
+  color: red;
+}
+
+.counterText[count^="11"] {
+  color: #e37933;
 }
 
 .amountText {

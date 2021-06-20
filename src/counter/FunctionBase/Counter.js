@@ -14,7 +14,9 @@ function Counter() {
         <button className={"button"} onClick={() => dispatch(increment())}>
           +
         </button>
-        <span className={"counterText"}>{count}</span>
+        <span className={"counterText"} count={count}>
+          {count}
+        </span>
         <button className={"button"} onClick={() => dispatch(descrement())}>
           -
         </button>

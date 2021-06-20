@@ -1,0 +1,33 @@
+.main {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.main > * {
+  padding-top: 10px;
+}
+
+.input {
+  text-decoration: none;
+  appearance: none;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  font-size: 24px;
+  padding: 5px 10px;
+  color: #f0f0f0;
+  background-color: #639;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  transition: all 0.15s;
+}
+
+.button:hover {
+  background-color: green;
+}
